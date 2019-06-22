@@ -217,31 +217,6 @@ color:#fff;
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
-<<<<<<< HEAD
-    border-radius: 8px;
-}
-
-.card-class {
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 200px;
-}
-
-.card-body a{
-    color: #212121;
-    text-decoration: none;
-}
-/*
-.card-class h4 {
-    text-align: center;
-    margin-top: 130%;
-}
-
-.card-class a{
-    color: #FFF;
-    text-decoration-line: inherit;
-}*/
-=======
     
 }
 
@@ -363,4 +338,8 @@ About
 
     .jumbotron { height: 100%; padding: 5em 0;}
 }
->>>>>>> bbe955dcca27be05cbffc27d66fc8d0a2e7122e6
+
+/*card movie*/
+.card-deck {
+    margin-bottom: 20px;
+}
