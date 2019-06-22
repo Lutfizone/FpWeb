@@ -143,6 +143,17 @@ padding: 10em ;
         color: #FFF;
     }
 
+    .content2 {
+        background-color: #FFF;
+        height: 100%;
+        justify-content: center;
+    }
+    .content2 h2{
+        font: #222222;
+        text-align: center;
+    }
+    
+
 .boxes{
 background-color: #7f1b83;
 width: 100%;
