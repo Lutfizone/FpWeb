@@ -217,13 +217,10 @@ color:#fff;
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
+
 /* News */
 .news{
     padding: 30px;
@@ -262,7 +259,7 @@ color:#fff;
     margin-left: 80px;
     margin-right: 80px;
     border-radius: 5px  ;
-    background-color: #7f1b83
+    background-color: #7f1b83;
     padding: 20px;
     color: #FFF;
     width: 350px;
@@ -276,7 +273,7 @@ color:#fff;
     margin-left: 25%;
 }
 /* Promotion */
-=======
+
 .card-class {
     margin-left: 75px;
     margin-right: 75px;
@@ -287,20 +284,7 @@ color:#fff;
     color: #212121;
     text-decoration: none;
 }
-/*
-.card-class h4 {
-    text-align: center;
-    margin-top: 130%;
-}
 
-.card-class a{
-    color: #FFF;
-    text-decoration-line: inherit;
-}*/
-=======
->>>>>>> 836eba24ef9fe3fac5fc4efa5120c2367db1d4cd
-    
-}
 
 
 /*==========================
@@ -420,13 +404,7 @@ About
 
     .jumbotron { height: 100%; padding: 5em 0;}
 }
-<<<<<<< HEAD
 
-/*card movie*/
 .card-deck {
     margin-bottom: 20px;
 }
-=======
->>>>>>> bbe955dcca27be05cbffc27d66fc8d0a2e7122e6
->>>>>>> 69a524ac3c81abc4f702b28074bedf8c99c4abfe
->>>>>>> 836eba24ef9fe3fac5fc4efa5120c2367db1d4cd
