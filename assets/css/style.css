@@ -52,38 +52,53 @@ html, body{
 
 
 main {
-    flex: 1 0 auto;
-  }
-
-  
-  .subs{
-    background-image: url("file:///C:/Users/Lutfi/Desktop/FpWeb/2.jpg");
-	background-color:rgba(24, 24, 24, 0.8);
-    color: #212121;
-    align-content: center;
-	padding: 10em ;
-	
+flex: 1 0 auto;
 }
-  .boxes{
-	background-color: #7f1b83;
-	width: 100%;
-	padding: 4em ;
-	height: auto;
+
+.subs{
+    border: 2px solid red;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+
+background: url(../images/capt.jpg)no-repeat;
+background-size: cover;
+background-color:rgba(24, 24, 24, 0.8);
+color: #fff;
+align-content: center;
+padding: 10em ;	
+}
+    .subs > * {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .subs input[type="text"] {
+        width: 60%;
+    }
+    .subs input[type="submit"]{
+        background-color: #7f1b83;
+        color: #FFF;
+    }
+
+.boxes{
+background-color: #7f1b83;
+width: 100%;
+padding: 4em ;
+height: auto;
 }
 
 .footer2 {
-    position: absolute;
-	align-content: left;
-    color: #FFF;
-    background: #212121;
-    position: relative;
-	padding: 1.5em ;
-  }
-
-
+position: absolute;
+align-content: left;
+color: #FFF;
+background: #212121;
+position: relative;
+padding: 1.5em ;
+}
 .general,.Latest-tv-series,.faq{
-    padding: 3em 0;
-    color:#fff;
+padding: 3em 0;
+color:#fff;
 }
 .w3_latest_text {
     margin-left: 3em;
