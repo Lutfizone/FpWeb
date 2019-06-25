@@ -63,19 +63,19 @@ html, body{
     width: 0px;
    }
 
-   @media screen and (max-width: 600px) {
-    .search-box.responsive {position: relative;}
-    .search-box.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .search-box.responsive a {
+   .main{
+    font-size: 100%;
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ffffff;;
+   }
+     .search-box.responsive a {
       float: none;
       display: block;
       text-align: left;
     }
-  }
 
 .navbar {
     background: #7f1b83;
@@ -123,6 +123,10 @@ html, body{
     font-size: 20px;
     color: #FFF;
     margin-left: 5%;
+}
+.general hr {
+    width:90%;
+    color:#7f1b83;
 }
 main {
 flex: 1 0 auto;
