@@ -12,8 +12,63 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    
+    var popularMovie = "https://api.themoviedb.org/3/discover/movie?api_key=eec76e3bf4511375b68d5ffee3854326&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
+
+		$.getJSON(popularMovie, function(data){
+			for(var i = 1; i <= 6; i++) {
+				var id			= data.results[i].id;
+				var posterPath	= data.results[i].poster_path;
+				var movieTitle 	= data.results[i].original_title; 
+				var voteCount	= data.results[i].vote_average;
+        var release_date  = data.results[i].release_date;
+        var  with_runtime  = data.results[i]. with_runtime;
+				$('#popularMovies').append(`
+					<div class="movie__list__item">
+						<div class="movie__list__item__poster">
+							<img src="http://image.tmdb.org/t/p/original${posterPath}" alt="Movie-Poster">
+						</div>
+						<div class="movie__list__item__info">
+							<a href="detail_movie.html?type=movie&id=${id}">${movieTitle}</a>
+              <div class="movie__list__item__info_rilis"> ${release_date}</div>
+							<p> <i class="fas fa-star">${voteCount} </p></i>
+						</div>
+					</div>
+				`);
+			}
+		});
+
+
+    var tvShows = "https://api.themoviedb.org/3/tv/popular?api_key=eec76e3bf4511375b68d5ffee3854326&language=en-US&page=1";
+
+			$.getJSON(tvShows, function (data) {
+				for (var i = 0; i < 6; i++) {
+					var id 			= data.results[i].id;
+					var posterPath 	= data.results[i].poster_path;
+					var tvShowTitle = data.results[i].name;
+					var voteCount 	= data.results[i].vote_count;
+         
+					$('#tvShows').append(`
+					<div class="movie__list__item">
+						<div class="movie__list__item__poster">
+							<img src="http://image.tmdb.org/t/p/original${posterPath}" alt="Movie-Poster">
+						</div>
+						<div class="movie__list__item__info">
+							<a href="detail_movie.html?type=tv&id=${id}">${tvShowTitle}</a>
+              <p> <i class="fa fa-star">${voteCount}</p></i>
+						</div>
+					</div>
+				`);
+				}
+			});
+    </script>
+
+  </head>
+
+<body>
 
 <!-- Top menu -->
 <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
@@ -83,28 +138,42 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
-    
-	<div class="general">
-    <hr style="height:2px; border:none; background-color:#7f1b83;">
-     <h4 class="latest-text w3_latest_text">RANDOM MOVIES</h4>
-        </div>
+<main>
+<div class="movie__lists__div">
+            <div class="container-fluid">
+              <div class="movie__lists__header__container">
+                <hr style="height:2px; border:none; background-color:#7f1b83;">
+                <h4 class="movie__lists__heading">NOW PLAYING</h4>
+                <a href="#" class="show__more">Show more..</a> 
+              <div class="movie__lists__content" id="popularMovies">
+              </div>
+            </div>
+          </div>
         
-        <div class="general">
-          <hr style="height:2px; border:none; background-color:#7f1b83;">
-          <h4 class="latest-text w3_latest_text">TVSHOWS</h4>
+
+        <div class="movie__lists__div">
+          <div class="container-fluid">
+            <div class="movie__lists__header__container">
+              <hr style="height:2px; border:none; background-color:#7f1b83;">
+              <h4 class="movie__lists__heading">POPULAR TV</h4>
+              <a href="#" class="show__more">Show more..</a> 
+            <div class="movie__lists__content" id="tvShows"> 
+              
+            </div>
+          </div>
         </div>
-    
     
     <div class="subs">
-      <h2>SUBSCRIBE</h2> <input type="text" placeholder="Enter Email" name="email" required> 
-      <input class="btn btn-primary" type="submit" value="Submit">
+      <h2>SUBSCRIBE</h2> 
+      <form class="newsletter__form" action="#">
+					<input type="text" name="newsletter_username" id="newsletter_username" placeholder="Nama Depan">
+					<input type="email" name="newsletter_email" id="newsletter_email" placeholder="Email">
+					<input type="submit" name="newsletter_submit" id="newsletter_submit" value="Kirim">
+				</form>
   </div>
   
 <div class="boxes">
 </div>
-
 
     <!--Footer-->
     <div class="footer2">
