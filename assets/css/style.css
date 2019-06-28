@@ -204,13 +204,13 @@ main { margin-bottom: 0; }
                         }
 
 						.movie__list__item__info p,
-						.similar__movie__item__info p {
+						.similar__movie__item__info p  {
 							background-color: #7f1b83;
 							border-radius: 2.5px;
 							font-family: sfProMedium;
                             color: #fff;
+                            right: -1px;
                             font-size: 12px;
-                            
                             float: right;
 
 							
@@ -219,8 +219,10 @@ main { margin-bottom: 0; }
 							position: absolute;
 							top: 0;
 							right: 0;
-							margin: 10px;
-						}
+							
+                        }
+                       
+                        
 
 .general hr {
     width:90%;
