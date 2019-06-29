@@ -17,15 +17,15 @@
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-		var popularMovie = "https://api.themoviedb.org/3/movie/popular?api_key=cf2bfce5f534530b1292590add9ae426&language=en-US&page=1";
+		var now_playingMovie = "https://api.themoviedb.org/3/movie/now_playing?api_key=cf2bfce5f534530b1292590add9ae426&language=en-US&page=1";
 
-		$.getJSON(popularMovie, function(data){
+		$.getJSON(now_playingMovie, function(data){
 			for(var i = 1; i <= 18; i++) {
 				var id			= data.results[i].id;
 				var posterPath	= data.results[i].poster_path;
 				var movieTitle 	= data.results[i].original_title; 
 				var voteCount	= data.results[i].vote_average;
-				$('#popularMovies').append(`
+				$('#now_playingMovies').append(`
 					<div class="movie__list__item">
 						<div class="movie__list__item__poster">
 							<img src="http://image.tmdb.org/t/p/original${posterPath}" alt="Movie-Poster">
@@ -91,16 +91,16 @@
 
 <!--movie-->
         <main>
-                <hr style="height:2px; border:none; background-color:#7f1b83";>
+                <hr style="height:2px; border:none; background-color:#7f1b83;">
         <div class="movie__lists__div">
         <div class="container-fluid">
           <div class="movie__lists__header__container">
-            <h4 class="latest-text w3_latest_text">POPULAR MOVIES</h4>
+            <h4 class="latest-text w3_latest_text">NOW PLAYING MOVIES</h4>
         
             <a href="#" class="show__more">Show more</a>
           </div>
         
-          <div class="movie__lists__content" id="popularMovies">
+          <div class="movie__lists__content" id="now_playingMovies">
             
           </div>
         </div>
@@ -108,7 +108,7 @@
   
         <!--batas movie-->
     <div class="general">
-            <hr style="height:2px; border:none; background-color:#7f1b83;">
+            <hr style="height:2px; border:none; background-color:#7f1b83";>
     </div>
                 <div class="subs">
                         <h2>SUBSCRIBE</h2> <input type="text" placeholder="Enter Email" name="email" required> 
