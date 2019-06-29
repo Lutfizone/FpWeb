@@ -387,7 +387,12 @@ color:#fff;
     background-color: transparent; 
     text-decoration: none;
 }
+.creator{
 
+}
+.wrapper p{
+    color: grey;
+}
 .time{
     text-align: right;
     font-size: 10px;
@@ -395,6 +400,7 @@ color:#fff;
 .newstitle{
     color: #FFF;
     text-align: left;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .wrapper{
@@ -403,7 +409,6 @@ color:#fff;
     grid-gap: 320px;
     margin-bottom: 40px;
 }
-
 .box{
     margin-left: 80px;
     margin-right: 80px;
@@ -411,8 +416,17 @@ color:#fff;
     background-color: #7f1b83;
     padding: 20px;
     color: #FFF;
-    width: 350px;
-    height: 300px;    
+    width: 355px;
+    height: 320px;    
+}
+.card-img-top{
+    border-radius: 10px;
+}
+.general{
+    text-align: center;
+}
+.general h4{
+    font-size: 50px;
 }
 /* News */
 
