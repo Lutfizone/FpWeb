@@ -50,6 +50,7 @@
 					var posterPath 	= data.results[i].poster_path;
 					var tvShowTitle = data.results[i].name;
 					var voteCount 	= data.results[i].vote_count;
+          var release_date  = data.results[i].release_date;
          
 					$('#tvShows').append(`
 					<div class="movie__list__item">
@@ -73,7 +74,7 @@
 <!-- Top menu -->
 <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" width="150" height="45" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,10 +89,10 @@
                     <a class="nav-link scroll-link" href="movie.html">Movies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll-link" href="#section-2">News</a>
+                    <a class="nav-link scroll-link" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll-link" href="#section-2">Promotion</a>
+                    <a class="nav-link scroll-link" href="promotion.html">Promotion</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link scroll-link" href="abousus.html">About us</a>
@@ -144,7 +145,7 @@
               <div class="movie__lists__header__container">
                 <hr style="height:2px; border:none; background-color:#7f1b83;">
                 <h4 class="movie__lists__heading">NOW PLAYING</h4>
-                <a href="#" class="show__more">Show more..</a> 
+                <a href="nowplayingmovie.html" class="show__more">Show more..</a> 
               <div class="movie__lists__content" id="popularMovies">
               </div>
             </div>

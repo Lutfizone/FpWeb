@@ -300,50 +300,6 @@ color:#fff;
     width: 350px;
     height: 300px;    
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 9088545ad13ff2d038ae409403d3094f57e18374
-
-/*==========================
-About
-=========================== */
-
-
-
-/*---Jumbotron---*/
-
-/*.jumbotron{
-	height: 300px;
-	width: 100%;
-	background: url('../images/team.jpeg') center;
-	background-size:cover;
-	position: relative;
-}
-	.jumbotron .overlay{
-		background-color: rgba(0, 0, 0, 0.6);
-		position: absolute;
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 10;
-	}
-    .jumbotron h1{
-        color: #FFF;
-        text-align: center;
-        padding-top: 5%;
-    }
-.jumbotron .container *{
-	text-align: center;
-	z-index: 20;
-
-}*/
-
-/*---about content---*/
-
 
 
 /*---Media query---*/
@@ -431,111 +387,120 @@ About
     text-decoration: none;
     color: #FFF;
 }
-main { 
-    margin-bottom: 0;
-    flex: 1 0 auto;
-}
+main { margin-bottom: 0; }
 
-        .movie__list__divider {
-            background-color: #E8E8E8;
-            margin: 5em 0;
-            width: 100%;
-            height: 2px;
-        }
-
-        .movie__lists__div {
-            height: auto;
-            margin: 3em 0;
-            color: #fff;
-            
-        }
-        .movie__lists__div hr{
-            /*margin-left: 65px;*/
-            border-color: #7f1b83;
-        }
-
-            .movie__lists__header__container { margin-bottom: 2em; position: relative; }
-
-                a.show__more {
-                    color: #FFF;
-                    background-color: #7f1b83;
-                    border-radius: 7.5px;
-                    padding: 7px 15px;
-                    text-decoration: none;
-
-                    font-size: 0.955em;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-
-            .movie__lists__content {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-gap: 30px;
-
+			.movie__list__divider {
+				background-color: #E8E8E8;
+				margin: 5em 0;
+				width: 100%;
+                height: 5px;
+                               
+			}
+	
+			.movie__lists__div {
                 height: auto;
-                width: auto;
+                color: #E8E8E8;
+                margin: 3em 0;
                 
-                margin: 65px 0px 0px 65px;
-                overflow-x: auto !important;
-                scroll-snap-type: x proximity;
-                overflow-y: hidden;
-                -webkit-overflow-scrolling: touch;
+			}
 
-                white-space: nowrap;
-            }
+				.movie__lists__header__container { margin-bottom: 2em; position: relative; }
 
-            .movie__list__item,
-            .similar__movie__item { height: 100%; position: relative;}
+					a.show__more {
+						color: #fff;
+						background-color: #7f1b83;
+						border-radius: 7.5px;
+						padding: 7px 15px;
 
-                .movie__list__item__poster {
-                    height: 250px;
-                    width: 100%;
-                }
+						font-size: 0.955em;
+						position: absolute;
+						top: 10px;
+						right: 0;
+					}
 
-                    .movie__list__item__poster img {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 7.5px;
-                    }
+				.movie__lists__content {
+					display: grid;
+					grid-template-columns: repeat(6, 1fr);
+                    grid-gap: 30px;
+                    padding-top: 1%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
-                .movie__list__item__info {
-                    margin-top: 0.5em;
-                    padding: 10px;
-                    padding-top: 0;
-                    white-space: normal;
-                    text-align: center;
-                }
+					height: auto;
+					width: auto;
 
-                    .movie__list__item__info a {
-                        font-size: 1em;
+					overflow-x: auto !important;
+					scroll-snap-type: x proximity;
+					overflow-y: hidden;
+					-webkit-overflow-scrolling: touch;
+
+					white-space: nowrap;
+				}
+
+				.movie__list__item,
+				.similar__movie__item { height: 100%; position: relative;}
+
+					.movie__list__item__poster {
+						height: 300px;
+						width: 100%;
+					}
+
+						.movie__list__item__poster img {
+							width: 100%;
+							height: 100%;
+							border-radius: 7.5px;
+						}
+
+					.movie__list__item__info {
+						margin-top: 0.5em;
+						padding: 2px;
+                        padding-top: 0;
+                        text-align: center;
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+					}
+
+						.movie__list__item__info a {
+                        text-align: center;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 1.20em;
                         color: #fff;
-                        text-decoration: none;
-                    }
+                        padding: 5%;
+                            
+                        }
+                        
+                        .movie__list__item__info_rilis {
+                            font-size: 14px;
+                            text-align: center;
+							color: #fff;
+                        }
 
-                    .movie__list__item__info p,
-                    .similar__movie__item__info p {
-                        background-color: #eec643;
-                        border-radius: 2.5px;
-                        font-family: sfProMedium;
-                        color: #fff;
+						.movie__list__item__info p,
+						.similar__movie__item__info p  {
+							background-color: #7f1b83;
+							border-radius: 2.5px;
+							font-family: sfProMedium;
+                            color: #fff;
+                            right: -1px;
+                            font-size: 12px;
+                            float: right;
+                            
 
-                        width: auto;
-                        height: auto;
-                        padding: 5px 10px;
+							
+							padding: 5px 10px;
 
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        margin: 10px;
-                    }
+							position: absolute;
+							top: 0;
+							right: 0;
+							
+                        }
 /*end movie*/
 
 /*============Detail Movie============*/
-.detail__movie__body {
-    /* background-color: #f6f7f8; */
-}
+
 
     .transparent-nav {
         background: linear-gradient(to bottom, #000, transparent) !important;
@@ -606,21 +571,11 @@ main {
             letter-spacing: 1px;
         }
 
-        /* ul.backdrop__movie__genre li {
-            color: #FFF;
-            margin: 0 10px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        ul.backdrop__movie__genre li:first-child {
-            margin-left: 5px;
-        } */
-
+        
     button.backdrop__trailer__btn {
         display: block;
         width: 175px;
-        background-color: #E2B62F;
+        background-color: #7f1b83;
         border: none;
         border-radius: 50px;
 
@@ -633,7 +588,7 @@ main {
     }
 
     button.backdrop__trailer__btn:hover {
-        background-color: #eec643;
+        background-color: #8605B5;
         transition: all .3s;
     }
 
@@ -657,10 +612,7 @@ main {
 
 .backdrop__additional__info {
     background-color: #FFF;
-    border-bottom: 3px solid tomato;
-
-    /* -webkit-box-shadow: 0px 7px 130px -40px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 7px 130px -40px rgba(0, 0, 0, 0.75); */
+    border-bottom: 3px solid #7f1b83;
     box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.15);
 
     display: block;
@@ -719,6 +671,7 @@ main {
         }
 
         p.movie__synopsis {
+            color: #FFF;
             width: 85%;
             font-size: 1.115em;
             line-height: 30px;
@@ -733,6 +686,7 @@ main {
 
     h3.similar__movies__header {
         position: relative;
+        color: #FFF;
     }
 
     h3.similar__movies__header:after {
@@ -743,7 +697,7 @@ main {
         content: '';
         width: 10%;
         height: 2px;
-        background-color: tomato;
+        background-color: #7f1b83;
     }
 
     .similar__movie__content {
@@ -787,7 +741,7 @@ main {
 
                 .similar__movie__item__info a {
                     font-size: 1.35em;
-                    color: #000;
+                    color: #fff;
                     text-decoration: none;
                 }
 
@@ -801,6 +755,7 @@ main {
     .comments__div .container-fluid,
     .reviews__div .container-fluid {
         width: 100% !important;
+        color: #FFF;
         padding: 0;
     }
 
