@@ -15,6 +15,48 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/agency.css">
 	
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<script type="text/javascript">
+		$(document).ready (function() {
+		 $('#formContoh').formValidation({
+		 framework: 'bootstrap',
+		 excluded: 'disabled',
+		 icon: {
+		 valid: 'glyphicon glyphicon-ok',
+		 invalid: 'glyphicon glyphicon-remove',
+		 validating: 'glyphicon glyphicon-refresh'
+		 },
+		 fields: {
+		 username: {
+		 validators: {
+		 notEmpty: {
+		 message: 'Username Tidak Boleh Kosong'
+		 }
+		 }
+		 },
+		 emailUser: {
+		 validators: {
+		 notEmpty: {
+		 message: 'Email Tidak Boleh Kosong'
+		 },
+		 emailAddress: {
+		 message: 'Email Tidak Valid'
+		 }
+		 }
+		 },
+		 }
+		 })
+		});
+		function ValidateEmail(mail) 
+		{ 
+		 if (/mysite@ourearth.com/.test(emailUser)) 
+		 { 
+		 return (true) 
+		 } 
+		 alert("Masukkan e-Mail Dengan Benar") 
+		 return (false) 
+		}
+		</script>
 </head>
 
 <body>
@@ -217,14 +259,18 @@
 					<div class="col contact__form__container">
 						<h1 class="contact__heading">Contact Us </h1>
 						<form class="contact__form">
+								<form id="formContoh">
 							<div class="input-group">
-								<input type="text" name="Nama" id="" placeholder="Nama">
-								<input type="email" name="Email" id="" placeholder="Email">
+								<input type="text" name="Nama" id="username" placeholder="Nama">
+								<input type="email" name="Email" id="emailUser" onchange="ValidateEmail()" placeholder="example@mail.com" class="form-control">
 							</div>
 							<input type="text" name="Judul Pesan" id="judulpesan" placeholder="Judul Pesan">
 							<textarea name="Pesan" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
+							<div class="form-group">
+									<input type="submit" class="btn btn-primary" value="Submit">
+									</div>
 						</form>
-						<button type="button" class="btn btn-warning contact__form__btn">Kirim</button>
+						
 					</div>
 					<div class="col address__container">
 						<h1>Office Address</h1>
