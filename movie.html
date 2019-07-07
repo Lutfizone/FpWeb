@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800|Varela+Round" rel="stylesheet">
 
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -85,7 +84,7 @@
 </nav>
 
 <div class="btn-movie">
-    <button type="button" class="btn-movie-class"> <a href="movie.html">POPULAR</a></button>
+    <button type="button" class="btn-movie-class"><a href="movie.html">POPULAR</a></button>
     <button type="button" class="btn-movie-class"> <a href="topratemovie.html">TOP RATE</a></button>
     <button type="button" class="btn-movie-class"> <a href="nowplayingmovie.html">NOW PLAYING</a></button>
     <button type="button" class="btn-movie-class"> <a href="upcomingmovie.html">UPCOMING</a></button> 
@@ -112,14 +111,26 @@
                       </form>
         </div>
         
-      <div class="boxes"></div>
+    
       
           <!--Footer-->
           <div class="footer2">
             <hr style="height:2px; border:none; background-color:#7f1b83;">
             <span>© 2019 - UMovie </span>
           </div>
-             
+    
+     <!-- To Up-->
+	</div>
+	<div id="gotop"></div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="./assets/js/jquery.gotop.js"></script>
+	<script>
+	$('#gotop').gotop({
+		customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+		bottom: '1em',
+		right: '1em'
+	});
+	</script> 
 
 <!--Javascript-->  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

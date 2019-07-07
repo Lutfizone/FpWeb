@@ -252,10 +252,6 @@ color:#fff;
     margin-left: 3em;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9088545ad13ff2d038ae409403d3094f57e18374
 /* News */
 .news{
     padding: 30px;
@@ -517,7 +513,7 @@ main { margin-bottom: 0; }
     }
 
     nav.transparent-nav .dropdown-menu {
-        border-top: 2px solid tomato;
+        border-top: 2px solid #7f1b83;
     }
 
 
@@ -782,7 +778,7 @@ main { margin-bottom: 0; }
 
             form.comments__div__form input[type="submit"] {
                 border: none;
-                background-color: tomato;
+                background-color: #7f1b83;
                 color: #FFF;
 
                 width: auto;

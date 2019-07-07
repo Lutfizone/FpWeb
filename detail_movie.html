@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/moviestyle.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grt-youtube-popup.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800|Varela+Round" rel="stylesheet">
 
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -120,7 +120,7 @@
 						</div>
 						<div class="similar__movie__item__info">
 							<a href="detail_movie.html?type=movie&id=${id}">${judul}</a>
-							<p>${rating}</p>
+							<p> <i class="fa fa-star">&nbsp;${rating} </p></i>
 						</div>
 					</div>
 				`);
@@ -234,16 +234,7 @@
 		</div>
 	</main>
 
-	<footer>
-		<div class="container-fluid">
-			<h1>MovieLabs.</h1>
-			<ul class="footer__lists">
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">FaQ</a></li>
-			</ul>
-		</div>
-	</footer>
+	
 	
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -257,52 +248,39 @@
 		crossorigin="anonymous"></script>
 
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="js/grt-youtube-popup.js"></script>
+	<script src="./assets/js/grt-youtube-popup.js"></script>
 	<script>
-		$(document).ready(function () {
-			$('.sidebar__dropdown__list').hide();
-			$('.sidebar-dropdown-toggle').click(function () {
-				$('.sidebar__dropdown__list').slideToggle();
-			});
+		$(".youtube-link").grtyoutube();
 
-			// fungsi apabila tombol sidebar diklik
-			$('.navbar-toggler').click(function (e) {
-				$('nav#sidebar').addClass('sidebar--active');
-				$('.overlay').fadeToggle("slow");
-				$('body').css('overflow', 'hidden');
-			});
-
-			// fungsi apabila overlay diklik
-			// (menutup sidebar dan menghilangkan overlay)
-			$('.overlay').click(function (e) {
-				$('nav#sidebar').removeClass('sidebar--active');
-				$('.overlay').fadeOut("fast");
-				$('body').css('overflow', 'auto');
-			});
-
-			// fungsi apabila tombol search mobile diklik
-			$('#mobile-search-btn').click(function() {
-				$('.mobile__search__container').fadeIn("fast");
-				$('body').css('overflow', 'hidden');
-			});
-
-			// fungsi apabila tombol close pada search mobile diklik
-			$('#search-close-btn').click(function() {
-				$('.mobile__search__container').fadeOut("fast");
-				$('body').css('overflow', 'auto');
-			});
-
-			$(".youtube-link").grtyoutube();
-		});
 	</script>
-    <!--Footer-->
-    
-    <div class="footer2">
-            <span>© 2019 - UMovie </span>
-        
-            </div>
-    
-    
+	
+	<div class="subs">
+			<h2>SUBSCRIBE</h2> 
+			<form class="newsletter__form" action="#">
+						  <input type="text" name="newsletter_username" id="newsletter_username" placeholder="Nama Depan">
+						  <input type="email" name="newsletter_email" id="newsletter_email" placeholder="Email">
+						  <input type="submit" name="newsletter_submit" id="newsletter_submit" value="Kirim">
+					  </form>
+		</div>
+	   
+		<!--Footer-->
+		<div class="footer2">
+		  <hr style="height:2px; border:none; background-color:#7f1b83;">
+		  <span>© 2019 - UMovie </span>
+		</div>
+
+    <!-- To Up-->
+	
+	<div id="gotop"></div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="./assets/js/jquery.gotop.js"></script>
+	<script>
+	$('#gotop').gotop({
+		customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+		bottom: '1em',
+		right: '1em'
+	});
+	</script>
 
 <!--Javascript-->  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

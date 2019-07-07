@@ -71,6 +71,8 @@
 
 <body>
 
+ 
+
 <!-- Top menu -->
 <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
     <div class="container">
@@ -164,6 +166,8 @@
           </div>
         </div>
     
+        
+
     <div class="subs">
       <h2>SUBSCRIBE</h2> 
       <form class="newsletter__form" action="#">
@@ -172,16 +176,26 @@
 					<input type="submit" name="newsletter_submit" id="newsletter_submit" value="Kirim">
 				</form>
   </div>
-  
-<div class="boxes">
-</div>
+ 
+  <!--Footer-->
+  <div class="footer2">
+    <hr style="height:2px; border:none; background-color:#7f1b83;">
+    <span>© 2019 - UMovie </span>
+  </div>
 
-    <!--Footer-->
-    <div class="footer2">
-      <hr style="height:2px; border:none; background-color:#7f1b83;">
-      <span>© 2019 - UMovie </span>
-    </div>
-       
+
+  <!-- To Up-->
+	</div>
+	<div id="gotop"></div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="./assets/js/jquery.gotop.js"></script>
+	<script>
+	$('#gotop').gotop({
+		customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+		bottom: '1em',
+		right: '1em'
+	});
+	</script>       
     
     
 
