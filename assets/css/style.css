@@ -12,7 +12,7 @@ html, body{
  .search-box {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     background: #fff;
     height: 40px;
@@ -26,11 +26,18 @@ html, body{
    }
    
    .search-box:hover > .search-btn {
-    background: white;
+    background-color: white;
     color: black;
+    text-decoration: none;
+
    }
+
+   .search-box:active > .search-btn {
+    background-color: #212121;
+  }
    
    .search-btn {
+    color: #e84118;
     float: right;
     width: 20px;
     height: 20px;
