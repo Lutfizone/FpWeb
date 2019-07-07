@@ -31,7 +31,6 @@ html, body{
    }
    
    .search-btn {
-    color: #e84118;
     float: right;
     width: 20px;
     height: 20px;
@@ -238,7 +237,12 @@ main { margin-bottom: 0; }
     color:#7f1b83;
 }
 
+.plugin {
+    margin-top:20px;
+margin-right:30px;
 
+margin-left:40px;
+}
 .subs{
     border: 2px solid red;
     display: flex;
@@ -515,7 +519,73 @@ About
 
 /*---about content---*/
 
+/* ============================== CONTACT PAGE ========================= */
+/* ===================================================================== */
 
+.contact__form__outer__container .row .col {
+    color: #fff;
+	padding-bottom: 3em;
+	}
+
+	.contact__form__container {
+		position: relative;
+	}
+		.contact__form__btn {
+            position: absolute;
+            background: #7f1b83;
+            color: #fff;
+			right: 1em;
+		}
+
+		.contact__form input#judulpesan,
+		.contact__form textarea {
+			display: block;
+			width: 100%;
+		}
+
+		.contact__form input,
+		.contact__form textarea {
+			margin: 10px 0;
+			padding: 7.5px;
+
+			font-size: 1.15em;
+			color: #787b80;
+			border: 2px solid #c8cdd4;
+			border-radius: 2.5px;
+		}
+
+		.contact__form input::placeholder,
+		.contact__form textarea::placeholder {
+			color: #787b80;
+			font-weight: bold;
+		}
+
+			.contact__form .input-group input {
+				width: 49%;
+			}
+
+			.contact__form .input-group input:first-child {
+				margin-right: 1%;
+			}
+
+			.contact__form .input-group input:last-child {
+				margin-left: 1%;
+			}
+
+		.contact__heading {
+			text-align: center;
+		}
+
+	.address__container h1 {
+		text-align: center;
+		margin-bottom: 1em;
+
+	}
+
+	.address__container p {
+		width:auto;
+		margin: 1em auto;
+	}
 
 /*---Media query---*/
 @media only screen and (max-width: 1440px) {
